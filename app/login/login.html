@@ -1,0 +1,39 @@
+<section ng-cloak class="login-container" layout="column" layout-align="center center">
+    <form name="loginForm" class="form-signin animate-show" ng-submit="vm.login(loginForm)" novalidate>
+        <div class="form-title">
+            <h1>Material Design Form</h1>
+        </div>
+        <md-input-container class="md-icon-float md-block">
+            <label>Host name</label>
+            <md-icon md-svg-src="content/svg/ic_computer_black_24px.svg" class="name"></md-icon>
+            <input type="text" id="hostName" ng-model="vm.hostName" required>
+            <div ng-messages="loginForm.hostName.$error">
+                <div ng-message="required">This is required!</div>
+            </div>
+        </md-input-container>
+        <md-input-container class="md-icon-float md-block">
+            <label>User name</label>
+            <md-icon md-svg-src="content/svg/ic_perm_identity_black_24px.svg" class="name"></md-icon>
+            <input type="text" id="username" ng-model="vm.userName" required />
+            <div ng-messages="loginForm.userName.$error">
+                <div ng-message="required">This is required!</div>
+            </div>
+        </md-input-container>
+        <md-input-container class="md-icon-float md-block">
+            <label>Password</label>
+            <md-icon md-svg-src="content/svg/ic_vpn_key_black_24px.svg" class="name"></md-icon>
+            <input type="password" id="password" ng-model="vm.password" required />
+            <div ng-messages="loginForm.password.$error">
+                <div ng-message="required">This is required!</div>
+            </div>
+        </md-input-container>
+        <div flex="100" layout="row" layout-align="end center">
+            <md-progress-circular md-mode="indeterminate" ng-show="false"></md-progress-circular>
+            <md-button type="submit" class="md-raised md-primary" aria-label="Login"
+                       ng-click="vm.login(loginForm)">
+                Login
+            </md-button>
+        </div>
+        <div class="alert alert-danger animate-show login-error-message" ng-show="vm.message != ''">{{vm.message}}</div>
+    </form>
+</section>

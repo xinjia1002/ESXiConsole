@@ -1,0 +1,21 @@
+{
+  "name": "ESXiConsole",
+  "description": "A starter project for AngularJS",
+  "version": "0.0.1",
+  "homepage": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.4.9",
+    "angular-route": "1.4.9",
+    "angular-loader": "1.4.9",
+    "angular-animate": "1.4.9",
+    "angular-aria": "1.4.9",
+    "angular-material": "1.0.7",
+    "angular-sanitize": "~1.5.5",
+    "angular-messages": "~1.5.5"
+  },
+  "resolutions": {
+    "angular": "1.4.9"
+  }
+}

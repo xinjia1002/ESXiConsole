@@ -1,0 +1,36 @@
+{
+   "name": "vsphere",
+   "version": "1.0.0",
+   "description": "VMware SDK for JavaScript",
+   "keywords": [
+      "cis",
+      "esxi",
+      "srm",
+      "sso",
+      "vapi",
+      "vcenter",
+      "vmware",
+      "vsphere"
+   ],
+   "license": "SEE LICENSE IN LICENSE",
+   "author": "VMware, Inc.",
+   "contributors": [
+      "Rostislav Hristov <rhristov@vmware.com>",
+      "Plamen Semerdzhiev <semerdzhievp@vmware.com>"
+   ],
+   "main": "dist/vsphere.js",
+   "dependencies": {
+      "es6-shim": "0.34.2",
+      "node-localstorage": "1.1.2",
+      "xmldom": "0.1.21",
+      "xmlhttprequest-cookie": "0.9.4"
+   },
+   "browser": {
+      "node-localstorage": false,
+      "xmldom": false,
+      "xmlhttprequest-cookie": false
+   },
+   "typescript": {
+      "definition": "dist/vsphere.d.ts"
+   }
+}
